@@ -49,7 +49,7 @@ def device():
     
  st.title('Device Detector')
  st.subheader('It displays devices connected to windows machine')
- if st.button('detect'):
+#  if st.button('detect'):
   p = subprocess.Popen("powershell.exe  Get-PnpDevice -PresentOnly -class WPD, DiskDrive, HIDCLASS -status ok | Where-Object { $_.InstanceId -match '^USB' }",stdout=subprocess.PIPE,stderr=subprocess.PIPE)
   p.communicate()
   o,e=p.communicate()
