@@ -42,7 +42,7 @@ def device():
 
  elif check_name=='nt' and check_platform=="win32":
 
-    st.write('This is Windows OS')
+  st.write('This is Windows OS')
 
     
     
