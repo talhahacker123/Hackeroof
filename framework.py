@@ -1,6 +1,4 @@
 import sys
-import win32api
-import win32file
 from datetime import datetime
 import streamlit as st
 import os.path
