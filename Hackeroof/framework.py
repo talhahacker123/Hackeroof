@@ -50,7 +50,7 @@ def device():
  st.title('Device Detector')
  st.subheader('It displays devices connected to windows machine')
 
-  p = subprocess.Popen("powershell.exe  Get-PnpDevice -PresentOnly -class WPD, DiskDrive, HIDCLASS -status ok | Where-Object { $_.InstanceId -match '^USB' }",stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+  '''p = subprocess.Popen("powershell.exe  Get-PnpDevice -PresentOnly -class WPD, DiskDrive, HIDCLASS -status ok | Where-Object { $_.InstanceId -match '^USB' }",stdout=subprocess.PIPE,stderr=subprocess.PIPE)
   p.communicate()
   o,e=p.communicate()
   st.success(o.decode('ascii'))
@@ -79,7 +79,7 @@ def device():
     p = subprocess.Popen("powershell.exe   Get-ItemProperty -Path 'HKLM:\\SYSTEM\\CurrentControlSet\\Enum\\USBSTOR\\*\\*' | Select FriendlyName",stdout=subprocess.PIPE,stderr=subprocess.PIPE)
     p.communicate()
     o,e=p.communicate()
-    st.write('output: '+o.decode('ascii'))
+    st.write('output: '+o.decode('ascii'))'''
 
 def subscanner():
  check_name=os.name
