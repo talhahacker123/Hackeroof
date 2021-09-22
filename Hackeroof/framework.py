@@ -51,7 +51,7 @@ def subscanner():
 # read all subdomains
  if st.button('click to scan'):
 
-  file = open("https://github.com/talhahacker123/Hackeroof/blob/main/Hackeroof/sub.txt")
+  file = open("g.txt")
   # read all content
   content = file.read()
   print(content)
