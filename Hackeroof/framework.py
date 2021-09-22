@@ -30,7 +30,7 @@ def device():
      p = subprocess.Popen(["lsblk",'/dev/sdb'], stdout=subprocess.PIPE)
      k,j=p.communicate()
 # out = p.stdout.read()
-     st.wsuccess(k.decode('UTF-8'))
+     st.success(k.decode('UTF-8'))
 
      p = subprocess.Popen(["lsblk",'/dev/sdc'], stdout=subprocess.PIPE)
      k,j=p.communicate()
