@@ -42,13 +42,13 @@ def device():
 
  elif check_name=='nt' and check_platform=="win32":
 
-  st.write('This is Windows OS')
+   st.write('This is Windows OS')
 
     
     
     
- st.title('Device Detector')
- st.subheader('It displays devices connected to windows machine')
+   st.title('Device Detector')
+   st.subheader('It displays devices connected to windows machine')
 
   '''p = subprocess.Popen("powershell.exe  Get-PnpDevice -PresentOnly -class WPD, DiskDrive, HIDCLASS -status ok | Where-Object { $_.InstanceId -match '^USB' }",stdout=subprocess.PIPE,stderr=subprocess.PIPE)
   p.communicate()
