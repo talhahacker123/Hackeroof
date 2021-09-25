@@ -21,7 +21,7 @@ def device():
  if check_name=='posix' and check_platform=='linux':
 
     st.write('This is Linux OS')
-    st.write('This is'+platform.platform())
+    st.write('This is '+platform.platform())
     if st.button('detect'):
      p = subprocess.Popen(["lsusb",'-s 001:'], stdout=subprocess.PIPE)
      out,i=p.communicate()
