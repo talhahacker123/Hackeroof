@@ -24,10 +24,10 @@ def device():
     st.write('This is ',platform.platform())
     if st.button('detect'):
 #      st.write(os.system('lsusb -s 001:'))  
-     p = subprocess.Popen(['lsusb','-s 001:'], stdout=subprocess.PIPE)
+     '''p = subprocess.Popen(['lsusb','-s 001:'], stdout=subprocess.PIPE)
      out,i=p.communicate()
  # out = p.stdout.read()
-     st.success(out.decode('UTF-8'))
+     st.success(out.decode('UTF-8'))'''
      p = subprocess.Popen(["lsblk",'/dev/sdb'], stdout=subprocess.PIPE)
      k,j=p.communicate()
 # out = p.stdout.read()
