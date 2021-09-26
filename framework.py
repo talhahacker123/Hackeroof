@@ -24,7 +24,7 @@ def device():
     st.write('This is ',platform.platform())
     if st.button('detect'):
      '''st.write(os.system('lsusb -s 001:'))  
-     p = subprocess.Popen(["lsusb",'-s 001:'], stdout=subprocess.PIPE)
+     p = subprocess.Popen(['lsusb'], stdout=subprocess.PIPE)
      out,i=p.communicate()
  # out = p.stdout.read()
      st.success(out.decode('ascii'))'''
