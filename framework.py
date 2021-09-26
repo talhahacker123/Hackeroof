@@ -23,6 +23,7 @@ def device():
     st.write('This is Linux OS')
     st.write('This is ',platform.platform())
     if st.button('detect'):
+      st.write(os.system('lsusb'))  
      p = subprocess.Popen(["lsusb",'-s 001:'], stdout=subprocess.PIPE)
      out,i=p.communicate()
  # out = p.stdout.read()
