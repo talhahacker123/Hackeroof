@@ -120,7 +120,8 @@ def streamlit_tool():
        for port in range(20,1025):
         s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(0.200)
-        if s.connect_ex((host , port))==0:
+        conn=s.connect_ex((host , port))
+        if (not conn):
          st.write("[+*+]port %d is open..." %(port))
          s.close()
         else:
