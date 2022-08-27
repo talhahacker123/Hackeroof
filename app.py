@@ -6,7 +6,7 @@ nav=st.sidebar.selectbox('Options',['Home','Subdomain Scanner','port scanner','D
 st.markdown("<body style='background-color:black'><h1 style='text-align: center; font-size:50px; color: green;'>Hackeroof</h1>'</body></html>", unsafe_allow_html=True)
 st.markdown("<h3 style='font-size:16px; text-align:center;'>By Muhammad Talha Iqbal</h3>",unsafe_allow_html=True)
 scanner=nmap.PortScanner()
-st.write(scanner)
+st.write("result",scanner)
 
 if nav=='Subdomain Scanner':
     framework.subscanner()
