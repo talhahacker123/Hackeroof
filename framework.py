@@ -1,3 +1,4 @@
+import scapy
 import sys
 import platform
 from datetime import datetime
