@@ -12,7 +12,7 @@ def home():
 #   ('This is home page')''')
  st.markdown("<body><h1 style='text-align: center; '>Home</h1>'</body></html>", unsafe_allow_html=True)
  st.markdown("""# <h3>Hackeroof</h3>
-<b>Hackeroof</b> is a web base tool for [Ethical Hackers](https://searchsecurity.techtarget.com/definition/ethical-hacker#:~:text=An%20ethical%20hacker%2C%20also%20referred,%2D%2D%20and%20with%20their%20authorization.) and [Pentesters](https://en.wikipedia.org/wiki/Penetration_test#:~:text=A%20penetration%20test%2C%20colloquially%20known,confused%20with%20a%20vulnerability%20assessment.). Developed by [Muhammad Talha Iqbal](https://www.linkedin.com/in/muhammad-talha-iqbal-ab989b1a3/). 
+<b>Hackeroof</b> is a web base framework for [Ethical Hackers](https://searchsecurity.techtarget.com/definition/ethical-hacker#:~:text=An%20ethical%20hacker%2C%20also%20referred,%2D%2D%20and%20with%20their%20authorization.) and [Pentesters](https://en.wikipedia.org/wiki/Penetration_test#:~:text=A%20penetration%20test%2C%20colloquially%20known,confused%20with%20a%20vulnerability%20assessment.). Developed by [Muhammad Talha Iqbal](https://www.linkedin.com/in/muhammad-talha-iqbal-ab989b1a3/). 
 """,unsafe_allow_html=True)
 
 def device():
